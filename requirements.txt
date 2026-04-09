@@ -1,0 +1,12 @@
+streamlit
+faster-whisper
+sounddevice
+numpy
+scipy
+textblob
+nltk
+matplotlib
+plotly
+pypdf2
+groq
+python-dotenv
