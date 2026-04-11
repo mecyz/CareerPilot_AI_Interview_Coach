@@ -1,0 +1,69 @@
+.interview-tab {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.start-screen {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.start-heading {
+  font-family: var(--font-display);
+  font-size: 42px;
+  color: var(--text);
+  margin-bottom: 12px;
+}
+
+.start-sub {
+  color: var(--text-muted);
+  font-size: 15px;
+  margin-bottom: 28px;
+}
+
+.btn-primary {
+  background: var(--red);
+  color: #fff;
+  padding: 12px 28px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: var(--radius);
+}
+.btn-primary:hover { background: var(--red-dark); }
+
+.error-banner {
+  background: var(--red-light);
+  color: var(--red-dark);
+  border-radius: var(--radius);
+  padding: 10px 14px;
+  font-size: 13px;
+  border-left: 3px solid var(--red);
+}
+
+.processing-msg {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-muted);
+  font-size: 14px;
+  padding: 16px 0;
+}
+
+.spinner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--border);
+  border-top-color: var(--red);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.done-area {
+  display: flex;
+  flex-direction: column;
+}

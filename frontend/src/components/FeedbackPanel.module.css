@@ -1,0 +1,44 @@
+.panel {
+  background-color: var(--color-surface);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+}
+.panel h3 {
+  margin-top: 0;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+}
+.box {
+  background-color: var(--color-bg);
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid #333;
+}
+.good {
+  border-color: var(--color-secondary);
+  color: var(--color-secondary);
+}
+.poor {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+.label {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+.value {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.tip {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #2a2a2a;
+  border-left: 4px solid var(--color-secondary);
+  border-radius: 4px;
+}

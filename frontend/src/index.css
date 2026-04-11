@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --red: #FF4747;
+  --red-dark: #cc2a2a;
+  --red-light: #ffe5e5;
+  --yellow: #F7E998;
+  --yellow-dark: #c9bb5a;
+  --yellow-text: #6b5e00;
+  --bg: #111110;
+  --surface: #1c1c1a;
+  --surface2: #252523;
+  --border: rgba(255,255,255,0.08);
+  --text: #f0ede4;
+  --text-muted: #888880;
+  --font-display: 'DM Serif Display', Georgia, serif;
+  --font-body: 'DM Sans', sans-serif;
+  --radius: 10px;
+  --radius-lg: 16px;
+}
+
+html, body, #root {
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  border-radius: var(--radius);
+  padding: 10px 20px;
+  transition: opacity 0.15s, transform 0.1s, background 0.15s;
+}
+button:active { transform: scale(0.97); }
+button:disabled { opacity: 0.4; cursor: not-allowed; transform: none; }
+
+textarea, input[type="text"] {
+  font-family: var(--font-body);
+  font-size: 14px;
+  background: var(--surface2);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  width: 100%;
+  resize: vertical;
+  outline: none;
+  transition: border-color 0.15s;
+}
+textarea:focus, input[type="text"]:focus { border-color: var(--red); }
+
+label {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.pill {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 99px;
+  letter-spacing: 0.04em;
+}
+.pill-red { background: var(--red-light); color: var(--red-dark); }
+.pill-yellow { background: var(--yellow); color: var(--yellow-text); }
+.pill-muted { background: var(--surface2); color: var(--text-muted); border: 1px solid var(--border); }
+
+@keyframes pulse-ring {
+  0% { box-shadow: 0 0 0 0 rgba(255,71,71,0.4); }
+  70% { box-shadow: 0 0 0 10px rgba(255,71,71,0); }
+  100% { box-shadow: 0 0 0 0 rgba(255,71,71,0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in { animation: fadeIn 0.35s ease forwards; }
