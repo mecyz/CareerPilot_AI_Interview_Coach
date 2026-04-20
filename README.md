@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎯 AI Interview Coach
+# 🎯 CareerPilot - AI Interview Coach
 
 [![React](https://img.shields.io/badge/React-18.x-blue.svg?style=for-the-badge&logo=react)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-8.x-purple.svg?style=for-the-badge&logo=vite)](https://vitejs.dev/)
